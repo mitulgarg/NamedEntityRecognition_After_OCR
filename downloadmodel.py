@@ -1,4 +1,3 @@
-
 from huggingface_hub import hf_hub_download
 import time
 import requests
@@ -34,15 +33,4 @@ def download_file(filename, max_retries=5):
 for filename in filenames:
     download_file(filename)
 
-# Ensure that the model and tokenizer paths are correctly specified if they are used from local downloads
-
-
-# from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, AutoModelForSeq2SeqLM
-
-# tokenizer = AutoTokenizer.from_pretrained(model_id, legacy=False)
-# model = AutoModelForSeq2SeqLM.from_pretrained(model_id)
-
-# pipeline = pipeline("token-classification", model=model, device=-1, tokenizer=tokenizer, max_length=1000)
-
-# pipeline("What are competitors to Apache Kafka?")
 
