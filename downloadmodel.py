@@ -1,35 +1,9 @@
-# import os
-# from huggingface_hub import hf_hub_download
-# import time
-
-# HUGGING_FACE_API_KEY = "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"
-
-# model_id = "dslim/bert-base-NER"
-# filenames = [
-#     "onnx/added_tokens.json","onnx/config.json","onnx/model.onnx",
-#     "onnx/special_tokens_map.json","onnx/tokenizer.json",
-#     "onnx/tokenizer_config.json","onnx/vocab.txt","added_tokens.json", 
-#     "config.json", "flax_model.msgpack", "model.safetensors", 
-#     "pytorch_model.bin", "special_tokens_map.json","tf_model.h5",
-#     "tokenizer_config.json","onnx/vocab.txt"
-# ]
-
-# for filename in filenames:
-#     time.sleep(15)
-#     downloaded_model_path = hf_hub_download(
-#                 repo_id=model_id,
-#                 filename=filename,
-#                 token=HUGGING_FACE_API_KEY
-#     )
-#     print(downloaded_model_path)
-
-
 
 from huggingface_hub import hf_hub_download
 import time
 import requests
 
-HUGGING_FACE_API_KEY = "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"  # Make sure to keep API keys secure and not expose them unnecessarily.
+HUGGING_FACE_API_KEY = "YOUR_API_KEY"  # Make sure to keep API keys secure and not expose them unnecessarily.
 
 model_id = "dslim/bert-base-NER"
 filenames = [
